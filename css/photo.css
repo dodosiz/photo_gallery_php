@@ -5,3 +5,19 @@
 .category-button {
 	margin-top: 4% !important;/* so that it overides the default 5em margin*/
 }
+
+.admin-form {
+	margin-top: 2%;
+}
+
+.admin-pannel {
+	margin-top: 3%;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.admin-options-button {
+	margin-top: 4% !important;/* so that it overides the default 5em margin*/
+}
