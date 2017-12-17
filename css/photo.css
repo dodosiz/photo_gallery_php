@@ -1,0 +1,7 @@
+.categories {
+	margin-top: 2%;
+}
+
+.category-button {
+	margin-top: 4% !important;/* so that it overides the default 5em margin*/
+}
