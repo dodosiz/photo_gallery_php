@@ -1,4 +1,16 @@
-<?php require './php/connect.php'; ?>
+<?php 
+    require './php/connect.php'; 
+    if(isset($_GET['success'])){
+        if($_GET['success']=='true'){
+            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">';
+            echo $_GET['type'].' deleted successfully.';
+            echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
+            echo '<span aria-hidden="true">&times;</span>';
+            echo '</button>';
+            echo '</div>';
+        }
+    }
+?>
 
 <!doctype html>
 <html lang="en">

@@ -9,5 +9,6 @@ CREATE TABLE photos (
     description TEXT,
     directory_saved VARCHAR(200),
     category_id INT(11),
-    CONSTRAINT FOREIGN KEY (category_id) REFERENCES categories(id)
+    published TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
 );

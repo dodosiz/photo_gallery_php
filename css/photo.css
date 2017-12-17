@@ -21,3 +21,27 @@ a:hover {
 .admin-options-button {
 	margin-top: 4% !important;/* so that it overides the default 5em margin*/
 }
+
+.photo-collection {
+	margin-top: 2% !important;
+}
+
+.delete-button {
+	float: right;
+}
+
+.image-details {
+	margin-top: 1%;
+}
+
+.delete-message {
+	margin: 13% auto 0 auto;
+}
+
+.modal-button-group {
+	float: right;
+}
+
+.modal-button-group button {
+	margin-left: 5px;
+}
