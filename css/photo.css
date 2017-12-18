@@ -45,3 +45,8 @@ a:hover {
 .modal-button-group button {
 	margin-left: 5px;
 }
+
+.required {
+	padding-left: 10px;
+	color: #f00;
+}
