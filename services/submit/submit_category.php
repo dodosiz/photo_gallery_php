@@ -8,5 +8,5 @@
     
     mkdir("../../images/".$_POST['category'], 0700);
     
-    header("Location: ".LAYER_2.PAGE_VIEW."admin.php?success=true&type=Category");
+    header("Location: ../../index.php?success=true&type=Category&action=created");
 ?>

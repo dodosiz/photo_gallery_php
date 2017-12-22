@@ -50,7 +50,7 @@
           </div>
           
           <button type="submit" class="btn btn-primary">Submit</button>
-          <?php echo '<a href="'.LAYER_2.PAGE_VIEW.'admin.php">' ?>
+          <?php echo '<a href="'.LAYER_2.PAGE_VIEW.'category_details.php?category='.$_GET['category'].'">' ?>
           	<button type="button" class="btn btn-primary">Back</button>
           </a>
         </form>

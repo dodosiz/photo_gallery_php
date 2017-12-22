@@ -56,7 +56,7 @@
                 echo "Operation failed: (" . $mysqli->errno . ") " . $mysqli->error;
             }
             
-            header("Location: ".LAYER_2.PAGE_VIEW."admin.php?success=true&type=Photo");
+            header("Location: ../../index.php");
         }
     }
 ?>

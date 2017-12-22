@@ -35,6 +35,6 @@
         echo "Operation failed: (" . $mysqli->errno . ") " . $mysqli->error;
     }
     
-    header("Location: ../../index.php?success=true&type=Category");
+    header("Location: ../../index.php?success=true&type=Category&action=deleted");
     
 ?>

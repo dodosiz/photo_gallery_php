@@ -9,7 +9,7 @@
     if(isset($_GET['success'])){
         if($_GET['success']=='true'){
             echo '<div class="alert alert-success alert-dismissible fade show" role="alert">';
-            echo $_GET['type'].' deleted successfully.';
+            echo $_GET['type'].' '.$_GET['action'].' successfully.';
             echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
             echo '<span aria-hidden="true">&times;</span>';
             echo '</button>';
@@ -32,7 +32,7 @@
   </head>
   <body>
   
-  	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
       <a class="navbar-brand" href="index.php">Photo Gallery</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,13 +43,13 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <?php echo '<a class="nav-link" href="'.PAGE_VIEW.'admin.php">Admin</a>' ?>
+            <?php echo '<a class="nav-link" href="'.FORM_VIEW.'add_category_form.php?previous=index">Add Category</a>' ?>
           </li>
         </ul>
       </div>
     </nav>
   
-    <div class="container categories">
+    <div class="container content">
     	<?php require LOAD_SERVICE.'load_categories.php';?>
     </div>
     

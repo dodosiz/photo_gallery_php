@@ -1,6 +1,9 @@
 <?php 
     require '../../constants.php';
     require LAYER_2.CONNECT_SERVICE.'connect.php'; 
+    if($_GET['previous']=='categories'){
+        $category_id = $_GET['category'];
+    }
 ?>
 
 <!doctype html>
@@ -24,7 +27,13 @@
             <input name="category" type="text" class="form-control" id="categoryName">
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
-          <?php echo '<a href="'.LAYER_2.PAGE_VIEW.'admin.php">' ?>
+          <?php 
+              if($_GET['previous']=='index'){
+                  echo '<a href="../../index.php">';
+              }else if($_GET['previous']=='categories'){
+                  echo '<a href="'.LAYER_2.PAGE_VIEW.'category_details.php?category='.$category_id.'">';
+              }
+          ?>
           	<button type="button" class="btn btn-primary">Back</button>
           </a>
         </form>

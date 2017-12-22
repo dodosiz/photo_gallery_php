@@ -1,5 +1,5 @@
-.categories {
-	margin-top: 2%;
+.content {
+	margin-top: 7%;
 }
 
 .category-button {
@@ -26,10 +26,6 @@ a:hover {
 	margin-top: 2% !important;
 }
 
-.delete-button {
-	float: right;
-}
-
 .image-details {
 	margin-top: 1%;
 }
@@ -42,11 +38,43 @@ a:hover {
 	float: right;
 }
 
+.required {
+	padding-left: 10px;
+	color: #f00;
+}
+
 .modal-button-group button {
 	margin-left: 5px;
 }
 
-.required {
-	padding-left: 10px;
-	color: #f00;
+#navBar {  
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%; 
+	z-index:10;
+}
+
+@media(min-width: 768px){
+	.category-details-image {
+		height: 500px;
+	}
+}
+
+@media(max-width: 900px) {
+	.content {
+		margin-top: 12%;
+	}
+}
+
+@media(max-width: 500px) {
+	.content {
+		margin-top: 16%;
+	}
+}
+
+@media(max-width: 380px) {
+	.content {
+		margin-top: 20%;
+	}
 }
